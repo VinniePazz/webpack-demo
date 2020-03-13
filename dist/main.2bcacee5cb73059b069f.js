@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const { exec } = __webpack_require__(/*! child_process */ \"child_process\");\r\n\r\n// const result = [\"cls-1\", \"cls-2\", false].reduce((acc, current) => {\r\n//   if (current) {\r\n//     return acc + current + \" \";\r\n//   } else {\r\n//     return acc;\r\n//   }\r\n// }, \"\");\r\n\r\n// console.log(result + \"hello\");\r\n\r\nconsole.log(process.argv);\r\nconsole.log(exec);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const { exec } = __webpack_require__(/*! child_process */ \"child_process\");\r\n\r\nconsole.log(process.argv);\r\nconsole.log(exec);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

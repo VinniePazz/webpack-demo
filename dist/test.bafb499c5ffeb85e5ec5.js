@@ -81,30 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/test.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("const { exec } = __webpack_require__(/*! child_process */ \"child_process\");\r\n\r\n// const result = [\"cls-1\", \"cls-2\", false].reduce((acc, current) => {\r\n//   if (current) {\r\n//     return acc + current + \" \";\r\n//   } else {\r\n//     return acc;\r\n//   }\r\n// }, \"\");\r\n\r\n// console.log(result + \"hello\");\r\n\r\nconsole.log(process.argv);\r\nconsole.log(exec);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "child_process":
-/*!********************************!*\
-  !*** external "child_process" ***!
-  \********************************/
+/***/ "./src/test.js":
+/*!*********************!*\
+  !*** ./src/test.js ***!
+  \*********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"child_process\");\n\n//# sourceURL=webpack:///external_%22child_process%22?");
+eval("console.log(\"test.js\");\r\nconsole.log(\"hellow\");\r\nconsole.log(\"world\");\r\n\n\n//# sourceURL=webpack:///./src/test.js?");
 
 /***/ })
 
