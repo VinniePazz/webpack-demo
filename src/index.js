@@ -1,5 +1,17 @@
 // const { exec } = require("child_process");
+import $ from "jquery";
+import json from "./assets/json.json";
+import { compose } from "./playground";
+import xml from "./assets/xml.xml";
+import csv from "./assets/csv.csv";
+import Woman from "./assets/attractive-beautiful-woman";
 import "./styles/styles.css";
-
-console.log(process.argv);
-console.log(exec);
+import { Post } from "@components/Post";
+$(".jquery").html("some content");
+console.log(test);
+console.log("JSON: ", json);
+console.log("JPG: ", Woman);
+console.log("XML: ", xml);
+console.log("CSV: ", csv);
+console.log(Post);
+// console.log($);

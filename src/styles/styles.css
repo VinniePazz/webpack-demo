@@ -1,4 +1,21 @@
+@import "~normalize.css";
+@import "poppins.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .container {
   padding: 2rem;
+  color: white;
   background: red;
+}
+
+.logo {
+  width: 600px;
+  height: 350px;
+  background-image: url("../assets//attractive-beautiful-woman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
