@@ -1,12 +1,10 @@
 // const { exec } = require("child_process");
-import $ from "jquery";
+// import $ from "jquery";
 import json from "./assets/json.json";
-import { compose } from "./playground";
 import xml from "./assets/xml.xml";
 import csv from "./assets/csv.csv";
-import Woman from "./assets/attractive-beautiful-woman";
+import Woman from "./assets/attractive-beautiful-woman.jpg";
 import "./styles/styles.css";
-import { Post } from "@components/Post";
 $(".jquery").html("some content");
 console.log(test);
 console.log("JSON: ", json);

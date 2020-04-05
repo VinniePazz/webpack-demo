@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./index.js","vendors~main~test","vendors~main"]);
+/******/ 	deferredModules.push(["./index.js","vendors~main"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -234,18 +234,6 @@ eval("module.exports = {\"catalog\":{\"book\":[{\"$\":{\"id\":\"bk101\"},\"autho
 
 /***/ }),
 
-/***/ "./components/Post.js":
-/*!****************************!*\
-  !*** ./components/Post.js ***!
-  \****************************/
-/*! exports provided: Post */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Post\", function() { return Post; });\nclass Post {\r\n  constructor(title, name) {\r\n    this.title = title;\r\n    this.name = name;\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack:///./components/Post.js?");
-
-/***/ }),
-
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -254,19 +242,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_json_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/json.json */ \"./assets/json.json\");\nvar _assets_json_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./assets/json.json */ \"./assets/json.json\", 1);\n/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./playground */ \"./playground.js\");\n/* harmony import */ var _assets_xml_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/xml.xml */ \"./assets/xml.xml\");\n/* harmony import */ var _assets_xml_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_xml_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _assets_csv_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/csv.csv */ \"./assets/csv.csv\");\n/* harmony import */ var _assets_csv_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_csv_csv__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _assets_attractive_beautiful_woman__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/attractive-beautiful-woman */ \"./assets/attractive-beautiful-woman.jpg\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_css__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _components_Post__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @components/Post */ \"./components/Post.js\");\n// const { exec } = require(\"child_process\");\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\njquery__WEBPACK_IMPORTED_MODULE_0___default()(\".jquery\").html(\"some content\");\r\nconsole.log(test);\r\nconsole.log(\"JSON: \", _assets_json_json__WEBPACK_IMPORTED_MODULE_1__);\r\nconsole.log(\"JPG: \", _assets_attractive_beautiful_woman__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\r\nconsole.log(\"XML: \", _assets_xml_xml__WEBPACK_IMPORTED_MODULE_3___default.a);\r\nconsole.log(\"CSV: \", _assets_csv_csv__WEBPACK_IMPORTED_MODULE_4___default.a);\r\nconsole.log(_components_Post__WEBPACK_IMPORTED_MODULE_7__[\"Post\"]);\r\n// console.log($);\r\n\n\n//# sourceURL=webpack:///./index.js?");
-
-/***/ }),
-
-/***/ "./playground.js":
-/*!***********************!*\
-  !*** ./playground.js ***!
-  \***********************/
-/*! exports provided: compose */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash_fp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/fp */ \"../node_modules/lodash/fp.js\");\n/* harmony import */ var lodash_fp__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_fp__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"compose\", function() { return lodash_fp__WEBPACK_IMPORTED_MODULE_0__[\"compose\"]; });\n\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./playground.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_json_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/json.json */ \"./assets/json.json\");\nvar _assets_json_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./assets/json.json */ \"./assets/json.json\", 1);\n/* harmony import */ var _assets_xml_xml__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/xml.xml */ \"./assets/xml.xml\");\n/* harmony import */ var _assets_xml_xml__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_xml_xml__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_csv_csv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/csv.csv */ \"./assets/csv.csv\");\n/* harmony import */ var _assets_csv_csv__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_csv_csv__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_attractive_beautiful_woman_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/attractive-beautiful-woman.jpg */ \"./assets/attractive-beautiful-woman.jpg\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_css__WEBPACK_IMPORTED_MODULE_4__);\n// const { exec } = require(\"child_process\");\r\n// import $ from \"jquery\";\r\n\r\n\r\n\r\n\r\n\r\n$(\".jquery\").html(\"some content\");\r\nconsole.log(test);\r\nconsole.log(\"JSON: \", _assets_json_json__WEBPACK_IMPORTED_MODULE_0__);\r\nconsole.log(\"JPG: \", _assets_attractive_beautiful_woman_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\r\nconsole.log(\"XML: \", _assets_xml_xml__WEBPACK_IMPORTED_MODULE_1___default.a);\r\nconsole.log(\"CSV: \", _assets_csv_csv__WEBPACK_IMPORTED_MODULE_2___default.a);\r\nconsole.log(Post);\r\n// console.log($);\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
