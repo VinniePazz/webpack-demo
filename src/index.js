@@ -1,15 +1,9 @@
-// const { exec } = require("child_process");
-// import $ from "jquery";
-import json from "./assets/json.json";
-import xml from "./assets/xml.xml";
-import csv from "./assets/csv.csv";
-import Woman from "./assets/attractive-beautiful-woman.jpg";
-import "./styles/styles.css";
-$(".jquery").html("some content");
-console.log(test);
-console.log("JSON: ", json);
-console.log("JPG: ", Woman);
-console.log("XML: ", xml);
-console.log("CSV: ", csv);
-console.log(Post);
-// console.log($);
+import "./styles/main.css";
+
+console.log("hot");
+
+if (module.hot) {
+  module.hot.accept("./test", () => {
+    console.log("do something");
+  });
+}

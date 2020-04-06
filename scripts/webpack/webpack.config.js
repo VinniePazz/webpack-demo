@@ -4,6 +4,7 @@ const path = require("path");
 // Plugins
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // Constants
 const {
@@ -11,9 +12,8 @@ const {
   BUILD_DIRECTORY,
   PROJECT_ROOT,
 } = require("./constants.js");
-console.log(PROJECT_ROOT);
-/*********************** CONFIG ***********************/
 
+/*********************** CONFIG ***********************/
 module.exports = (env) => {
   // В функции мы можем делать что угодно
   const config = {
@@ -21,10 +21,10 @@ module.exports = (env) => {
     context: SRC_DIRECTORY,
     entry: {
       main: "./index.js",
-      test: "./test.js",
+      // test: "./test.js",
     },
     output: {
-      filename: "[name].[contenthash].js",
+      filename: "[name].[hash].js",
       path: BUILD_DIRECTORY,
     },
     resolve: {
