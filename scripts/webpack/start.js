@@ -4,7 +4,7 @@ const webpackDevServer = require("webpack-dev-server");
 const chalk = require("chalk"); // Раскрашивание консоли
 
 // Webpack config
-const getConfig = require("./webpack.config");
+const getDevConfig = require("./config/webpack.dev");
 
 // Constants
 const { HOST, PORT, BUILD_DIRECTORY } = require("./constants.js");
@@ -12,7 +12,7 @@ const { HOST, PORT, BUILD_DIRECTORY } = require("./constants.js");
 // Utils
 const { choosePort } = require("./utils");
 
-// Start webpack dev server
+// IIFE starts webpack dev server
 
 (async () => {
   try {
@@ -23,17 +23,18 @@ const { choosePort } = require("./utils");
       return;
     }
 
-    const config = getConfig();
+    const config = getDevConfig();
 
     const options = {
       port: choosenPort,
       host: HOST,
-      hot: true,
+      hot: true, // HMR
       quiet: true,
       noInfo: true,
       overlay: true,
       clientLogLevel: "silent",
       historyApiFallback: true,
+      publicPath: "/build/", // fix issue with webpack dev server when output filename not descriptor
       contentBase: BUILD_DIRECTORY,
     };
 

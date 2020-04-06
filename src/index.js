@@ -1,4 +1,6 @@
+// import test from "./test";
 import "./styles/main.css";
+import test from "./test";
 
 console.log("hot");
 
