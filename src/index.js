@@ -1,11 +1,9 @@
-// import test from "./test";
-import "./styles/main.css";
-import test from "./test";
+import "./child";
 
 console.log("hot");
 
 if (module.hot) {
-  module.hot.accept("./test", () => {
+  module.hot.accept("./child", () => {
     console.log("do something");
   });
 }

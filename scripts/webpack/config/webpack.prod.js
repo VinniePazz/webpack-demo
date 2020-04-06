@@ -17,7 +17,7 @@ const getCommonConfig = require("./webpack.common");
 module.exports = (env) => {
   // В функции мы можем делать что угодно
   const prodConfig = merge(getCommonConfig(), {
-    mode: "production",
+    mode: "none",
     plugins: [new CleanWebpackPlugin()],
   });
 
